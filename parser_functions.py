@@ -88,11 +88,11 @@ def convert_gate(line, register):
 
 def init_qasm():
     """
-    Description: Internal function (not explicitly used by the user). Initializes the file from another one in the working directory called "inicio.qasm".
+    Description: Internal function (not explicitly used by the user). Initializes the file from another one in the working directory called "init.qasm".
     Input: -
     Output: Necessary lines of code for library functionality. (Type: list)
     """
-    with open("inicio.qasm", "r") as file:
+    with open("init.qasm", "r") as file:
         init_content = file.read()
     init_content = init_content.split("&&&")
     return init_content
